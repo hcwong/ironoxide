@@ -14,6 +14,7 @@ fn run_fibonacci() {
             .read_line(&mut iterations)
             .expect("Failed to read");
 
+        // Hmmm is there a better way of doing this??
         let iterations: i32 = match iterations.trim().parse() {
             Ok(num) => num, 
             Err(_) => {
