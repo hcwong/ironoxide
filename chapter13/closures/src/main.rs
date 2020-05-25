@@ -73,3 +73,7 @@ fn capture_scope() {
 
     assert!(equal_to_x(y));
 }
+
+// Notes on iterator, if we want to call the next method, the iterator var must be mutable
+// This is because the variable will change state
+// Variations include iter_mut(iterate over mutable ref) and iter_into(take ownership)
