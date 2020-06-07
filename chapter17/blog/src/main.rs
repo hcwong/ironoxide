@@ -9,5 +9,7 @@ fn main() {
     assert_eq!("", post.content());
 
     post.approve();
+    assert_eq!("", post.content());
+    post.approve();
     assert_eq!("Blah", post.content());
 }
